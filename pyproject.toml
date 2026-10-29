@@ -25,6 +25,9 @@ dev = [
     "pytest>=7.0.0",
     "pytest-cov>=4.0.0",
 ]
+generator = [
+    "devito>=4.8.0",
+]
 qiskit = [
     "pennylane-qiskit>=0.38.0,<0.39.0",
 ]
