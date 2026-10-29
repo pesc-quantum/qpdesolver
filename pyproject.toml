@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qpdesolver"
+version = "0.1.0"
+description = "Quantum PDE Linear Solver Framework (HHL, VQLS, FWI, trainability diagnostics)"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "autoray<0.7",
+    "pennylane>=0.38.0,<0.39.0",
+    "pennylane-lightning>=0.38.0,<0.39.0",
+    "numpy>=1.24.0,<2.0.0",
+    "scipy>=1.10.0",
+    "h5py>=3.10.0",
+    "matplotlib>=3.7.0",
+    "jinja2>=3.1.0",
+    "loguru>=0.7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+]
+qiskit = [
+    "pennylane-qiskit>=0.38.0,<0.39.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
