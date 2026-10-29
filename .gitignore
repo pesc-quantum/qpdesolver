@@ -8,3 +8,19 @@ htmlcov/
 dist/
 build/
 .DS_Store
+*.h5
+*.hdf5
+.beads/
+
+# Beads / Dolt files (added by bd init)
+.dolt/
+*.db
+.beads-credential-key
+.beads/proxieddb/
+*.gate.lock*
+
+# IDE and AI agent local configuration folders
+.codex/
+.claude/
+.agents/
+.cursor/

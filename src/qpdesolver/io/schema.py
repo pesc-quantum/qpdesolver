@@ -7,11 +7,14 @@ class H5SchemaError(ValueError):
     """Raised when an HDF5 group violates the qpdesolver data layout schema."""
     pass
 
-SCHEMA_VERSION = "1.0.0"
+SCHEMA_VERSION = "1.1.0"
+DEVITO_FORMAT = "devito-seismic-hdf5"
 
 SUPPORTED_TYPES = (
     "linear_system",
     "velocity_model",
     "fwi_dataset",
     "results",
+    "velocity_model_2d",
+    "fwi_dataset_2d",
 )
